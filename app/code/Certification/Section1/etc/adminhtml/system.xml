@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="certification" translate="label" sortOrder="5">
+            <label>Certification</label>
+        </tab>
+        <section id="api_configs" sortOrder="10" translate="label" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>API Config</label>
+            <tab>certification</tab>
+            <resource>Certification_Section1::pokemon</resource>
+            <group id="api_urls" sortOrder="10" translate="label" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>DataSource Endpoints</label>
+                <field id="pokemon_endpoint" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Pokemon Endpoint</label>
+                    <comment>Please use a valid url that finish with "/"</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

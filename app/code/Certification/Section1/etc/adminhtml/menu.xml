@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Certification_Section1::pokemon" title="Pokemon" module="Certification_Section1" sortOrder="10" resource="Certification_Section1::pokemon"/>
+        <add id="Certification_Section1::pokemons_grid" title="All Pokemon's" module="Certification_Section1" sortOrder="10" resource="Certification_Section1::pokemon" action="certification_section1/pokemon" parent="Certification_Section1::pokemon"/>
+    </menu>
+</config>
