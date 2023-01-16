@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add
+            id="Certification_Section2::section2"
+            title="Section2"
+            translate="title"
+            module="Certification_Section2"
+            resource="Certification_Section2::section2"
+            parent="Magento_Backend::content"
+            sortOrder="900"
+        />
+        <add
+            id="Certification_Section2::faq"
+            title="FAQs"
+            translate="title"
+            module="Certification_Section2"
+            resource="Certification_Section2::faq"
+            parent="Certification_Section2::section2"
+            sortOrder="10"
+            action="section2/faq/index"
+        />
+    </menu>
+</config>

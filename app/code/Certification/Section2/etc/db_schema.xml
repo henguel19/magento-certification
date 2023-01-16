@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="certification_section2_faq" engine="innodb" comment="FAQ table for Magento 2 Certification training">
+        <column xsi:type="int" name="id" padding="10" unsigned="true" nullable="false" identity="true" comment="ID" />
+        <column xsi:type="text" name="question" nullable="false" comment="Question" />
+        <column xsi:type="text" name="answer" nullable="false" comment="Answer" />
+        <column xsi:type="boolean" name="is_published" nullable="false" comment="Is Published" default="false"/>
+        <column xsi:type="datetime" name="created_at" nullable="false" comment="Created at" default="CURRENT_TIMESTAMP" on_update="false"/>
+        <column xsi:type="datetime" name="updated_at" nullable="false" comment="Updated at" default="CURRENT_TIMESTAMP" on_update="true"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id" />
+        </constraint>
+    </table>
+</schema>

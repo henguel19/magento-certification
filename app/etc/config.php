@@ -345,6 +345,7 @@ return [
         'Magento_WishlistGraphQl' => 1,
         'Magento_WishlistSampleData' => 1,
         'Certification_Section1' => 1,
+        'Certification_Section2' => 1,
         'PayPal_Braintree' => 1,
         'PayPal_BraintreeGraphQl' => 1,
         'Temando_ShippingRemover' => 1
