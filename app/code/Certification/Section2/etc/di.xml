@@ -6,7 +6,7 @@
         type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
         <arguments>
             <argument name="mainTable" xsi:type="string">certification_section2_faq</argument>
-            <argument name="resourceModel" xsi:type="string">Certification\Section2\Model\Faq</argument>
+            <argument name="resourceModel" xsi:type="string">Certification\Section2\Model\ResourceModel\Faq</argument>
         </arguments>
     </virtualType>
     <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
