@@ -1,0 +1,18 @@
+{
+  "pokemon": {
+    "column": {
+      "id": true,
+      "name": true,
+      "url": true,
+      "created_at": true,
+      "updated_at": true,
+      "is_enable": true
+    },
+    "index": {
+      "POKEMON_ID": true
+    },
+    "constraint": {
+      "PRIMARY": true
+    }
+  }
+}

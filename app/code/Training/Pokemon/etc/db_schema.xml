@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="pokemon" resource="default" engine="innodb" comment="">
+        <column xsi:type="int" name="id" padding="10" unsigned="true" nullable="false" identity="true"/>
+        <column xsi:type="varchar" name="name" nullable="false" length="50"/>
+        <column xsi:type="text" name="url" nullable="false"/>
+        <column xsi:type="timestamp" name="created_at" nullable="false" on_update="false"/>
+        <column xsi:type="timestamp" name="updated_at" nullable="false" on_update="true"/>
+        <column xsi:type="boolean" name="is_enable" nullable="false" default="true"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+        <index referenceId="POKEMON_ID" indexType="btree">
+            <column name="id"/>
+        </index>
+    </table>
+</schema>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add
+            id="Training_Pokemon::pokemon"
+            title="Pokemon"
+            translate="title"
+            module="Training_Pokemon"
+            resource="Training_Pokemon::pokemon"
+            parent="Magento_Backend::content"
+            sortOrder="900"
+        />
+        <add
+            id="Training_Pokemon::pokemons"
+            title="Pokemon's"
+            translate="title"
+            module="Training_Pokemon"
+            resource="Training_Pokemon::pokemon"
+            parent="Training_Pokemon::pokemon"
+            sortOrder="10"
+            action="training_pokemon/pokemon/index"
+        />
+    </menu>
+</config>
